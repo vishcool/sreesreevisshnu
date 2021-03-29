@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 import { Language } from './models/Language';
+import {MatDialog} from '@angular/material/dialog';
+import {DialogComponent} from './dialog/dialog.component'
 
 
 @Component({
@@ -29,9 +31,18 @@ languages: Language[] = [
 ];
 
 
-constructor(private _snackBar: MatSnackBar){
+constructor(private _snackBar: MatSnackBar,public dialog: MatDialog){
 
 }
+
+
+openDialog() {
+  const dialogRef = this.dialog.open(DialogComponent);
+
+  dialogRef.afterClosed().subscribe(result => {
+  });
+}
+
 openSnackBar(message: string, action: string) {
   this._snackBar.open(message, action, {
     duration: 2000,
@@ -67,3 +78,8 @@ ngClick:number;
 
  
 }
+
+
+
+
+

@@ -17,6 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatListModule} from '@angular/material/list';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
 
 
 
@@ -24,6 +26,7 @@ import {MatListModule} from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
+    DialogComponent,
 
   ],
   imports: [
@@ -38,7 +41,8 @@ import {MatListModule} from '@angular/material/list';
     MatButtonModule, 
     MatSnackBarModule,
     MatChipsModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule
 
   ],
   providers: [UserserviceService],
