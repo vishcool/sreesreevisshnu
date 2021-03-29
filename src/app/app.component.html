@@ -1,0 +1,474 @@
+<div>
+
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <h1 class="display-4">Sree Vishnu</h1>
+          <p class="lead">System Engineer Infosys</p>
+          <a class="lead" href="mailto:sreesreevisshnu@gmail.com" target="_blank">sreesreevisshnu@gmail.com</a>
+           <p class="lead">+91 9952963948</p>
+          <a  data-toggle="modal" data-target="#exampleModalCenter" href="javascript:void(0)">View All Profiles</a>
+          <br>
+          <a href="./assets/SreeVishnu.pdf" target="_blank" download="SreeVishnu.pdf">Download Resume</a>
+        </div>
+        <div class="col-sm-3 align-self-center">
+          <img src="./assets/Img.jpeg" alt="Profile Pic" class=" imageStyle">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Experience">
+      <mat-accordion class="example-headers-align">
+        <mat-expansion-panel [expanded]="step === 0" (opened)="panelOpenState = 1;setStep(0)"
+          (closed)="panelOpenState = 4" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Infosys -System Engineer (Aug 2019 - Present)
+            </mat-panel-title>
+            <mat-panel-description>
+
+            </mat-panel-description>
+            <img src="./assets/segment.png" alt="segment">
+
+          </mat-expansion-panel-header>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="list-header">Development :</h5>
+              <div class="list-group">
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 1"
+                  [ngClass]="ngClick==1?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">Full stack Development</h5>
+                  </div>
+                  <p class="mb-1">Have experience in development of Automation Testing Application using Spring,
+                    Spring which can reduce the manual task and save time
+                    Boot and Angular8.</p>
+                </a>
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 2"
+                  [ngClass]="ngClick==2?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">Software Development</h5>
+                  </div>
+                  <p class="mb-1">Have good amount of experience and knowledge in development, integrating with
+                    different services , data management and deployment of the
+                    developed software.</p>
+                </a>
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 3"
+                  [ngClass]="ngClick==3?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">Deployment Tools</h5>
+                  </div>
+                  <p class="mb-1">Good knowledge in handling the source systems like JENKINS, JIRA, NGINX, and
+                    DOCKER.</p>
+                </a>
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 4"
+                  [ngClass]="ngClick==4?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">Client Support</h5>
+                  </div>
+                  <p class="mb-1">Have good amount of experience in client support.</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h5 class="list-header"> Key Achievements :</h5>
+              <div class="list-group">
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 5"
+                  [ngClass]="ngClick==5?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading ">Time complexity</h5>
+                  </div>
+                  <p class="mb-1">Implemented functionality which can reduce computational time and fool proof which
+                    can
+                    completely reduce the failure in the process.</p>
+                </a>
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 6"
+                  [ngClass]="ngClick==6?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">Angular UI</h5>
+                  </div>
+                  <p class="mb-1">Have completely re-designed the UI in the project that I worked on by applying
+                    responsive
+                    features and with all the latest functionalities which could be supported by most of the
+                    latest web browsers.</p>
+                </a>
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 7"
+                  [ngClass]="ngClick==7?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">Chrome Plugin</h5>
+                  </div>
+                  <p class="mb-1">Have developed Chrome Extension in the project that I worked on for automation
+                    process
+                    to reduce manual effort.</p>
+                </a>
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 8"
+                  [ngClass]="ngClick==8?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">User Management</h5>
+                  </div>
+                  <p class="mb-1">Implemented OAuth2 for the User Management.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <mat-action-row>
+            <button mat-button color="primary" (click)="nextStep()">Next</button>
+          </mat-action-row>
+
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="step === 1" (opened)="panelOpenState = 2;setStep(1)"
+          (closed)="panelOpenState = 4" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Infosys -System Engineer Trainee (Dec 2018-Apr 2019)
+
+            </mat-panel-title>
+            <mat-panel-description>
+
+
+            </mat-panel-description>
+            <img src="./assets/segment.png" alt="segment">
+
+          </mat-expansion-panel-header>
+
+
+          <div class="row">
+            <div class="col-md-6">
+              <h5 lass="list-header">Development :</h5>
+              <div class="list-group">
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 1"
+                  [ngClass]="ngClick==1?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">Trainings</h5>
+                  </div>
+                  <p class="mb-1">Have got trained in languages like Python,Java Spring ,MYSQL and Angular 4.</p>
+                </a>
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 2"
+                  [ngClass]="ngClick==2?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">Experince</h5>
+                  </div>
+                  <p class="mb-1">Have good amount of knowledge and experience in web development and wrinting sql
+                    queies to fetch the data. Developed an Online Vehicle purchasing Application</p>
+                </a>
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h5 class="list-header">Key Achievements :</h5>
+              <div class="list-group">
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 5"
+                  [ngClass]="ngClick==5?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading ">Project</h5>
+                  </div>
+                  <p class="mb-1">Completed the entire backend development of the project in which I was working on
+                    within a week.</p>
+                </a>
+                <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="ngClick = 6"
+                  [ngClass]="ngClick==6?'active':''">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 heading">Assessments</h5>
+                  </div>
+                  <p class="mb-1"> Have scored more than 80 % on all the technical assessments conducted in the current
+                    organisation in which I am working on.</p>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="step === 2" (opened)="panelOpenState = 3;setStep(2)"
+          (closed)="panelOpenState = 4" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Self Developed Projects
+            </mat-panel-title>
+            <mat-panel-description>
+
+            </mat-panel-description>
+
+            <img src="./assets/segment.png" alt="segment">
+          </mat-expansion-panel-header>
+
+          <div class="card ">
+            <div class="card-body">
+              <h5 class="list-header">Shop spot (E-commerce web application), Jan 2018 – MAr 2018.</h5>
+              <p>It's an e-commerce site where the admin updates the available products and on the
+                client side, the customer can view the products. Customers can further add the products to the cart
+                and purchase it later on or buy it while viewing</p>
+            </div>
+          </div>
+          <br>
+          <div class="card ">
+            <div class="card-body">
+              <h5 class="list-header"> Markdown Previewer</h5>
+              <br>
+              <p> 
+                Skills: JavaScript | HTML | CSS
+                <br><a href=" https://codepen.io/maranacoder/full/BVLwVq/" target="_blank"> Preview </a>
+              </p>
+               
+            </div>
+          </div>
+          <br>
+
+          <div class="card ">
+            <div class="card-body">
+              <h5 class="list-header">Random Quote Machine</h5>
+              <br>
+              <p>
+                
+                Skills: JavaScript | HTML | CSS
+                <br>
+                <a href="https://codepen.io/maranacoder/full/Ryzpvg/" target="_blank">Preview</a>
+
+              </p>
+            </div>
+          </div>
+          <br>
+
+          <div class="card ">
+            <div class="card-body">
+              <h5 class="list-header">Diploma In PhotoShop - ShwawAcademy</h5>
+
+              <br>
+              <a href="https://www.proprofs.com/quiz-school/usercertificate.php?id=162166481&qid=1823921&uname=SREE%20VISHNU"
+                target="_blank">View Certificate</a>
+            </div>
+          </div>
+
+
+
+
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">End</button>
+          </mat-action-row>
+
+
+        </mat-expansion-panel>
+
+      </mat-accordion>
+
+
+    </mat-tab>
+    <mat-tab label="Skills">
+      <br>
+      <div class="row animate__bounceInUp">
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+
+        <div class="col-md-3">
+          <div class="card animate__heartBeat" style="width: 18rem; border-radius: 20%;padding: 2%;">
+            <img src="./assets/angular.png" class="card-img-top" style="width: 50%;" alt="Angular">
+            <div class="card-body">
+              <h5 class="card-title">Angular</h5> 9/10
+              <progress value="9" max="10"> </progress>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+        <div class="col-md-3">
+          <div class="card animate__heartBeat" style="width: 18rem; border-radius: 20%;padding: 2%;">
+            <img src="./assets/java.png" class="card-img-top" alt="Java">
+            <div class="card-body">
+              <h5 class="card-title">Java</h5> 8/10
+              <progress value="8" max="10"> </progress>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+        <div class="col-md-3">
+          <div class="card animate__heartBeat" style="width: 18rem; border-radius: 20%;padding: 2%;">
+            <img src="./assets/spring.png" class="card-img-top" alt="Spring">
+            <div class="card-body">
+              <h5 class="card-title">Spring Boot</h5> 8/10
+              <progress value="8" max="10"> </progress>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="row animate__bounceInUp">
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+
+        <div class="col-md-3">
+          <div class="card animate__heartBeat" style="width: 18rem; border-radius: 20%;padding: 2%;">
+            <img src="./assets/bootstrap.png" class="card-img-top" style="width: 80%;" alt="bootstrap">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5> 9/10
+              <progress value="9" max="10"> </progress>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+        <div class="col-md-3">
+          <div class="card animate__heartBeat" style="width: 18rem; border-radius: 20%;padding: 2%;">
+            <img src="./assets/js.png" class="card-img-top" style="width: 60%;" alt="Java">
+            <div class="card-body">
+              <h5 class="card-title">Javascript</h5> 9/10
+              <progress value="9" max="10"> </progress>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+        <div class="col-md-3">
+          <div class="card animate__heartBeat" style="width: 18rem; border-radius: 20%;padding: 2%;">
+            <img src="./assets/mysql.png" class="card-img-top" alt="Spring">
+            <div class="card-body">
+              <h5 class="card-title">Sql</h5> 7/10
+              <progress value="7" max="10"> </progress>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="row animate__bounceInUp">
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+
+        <div class="col-md-3">
+          <div class="card animate__heartBeat" style="width: 18rem; border-radius: 20%;padding: 2%;">
+            <img src="./assets/php.png" class="card-img-top" alt="php">
+            <div class="card-body">
+              <h5 class="card-title">PHP</h5> 7/10
+              <progress value="7" max="10"> </progress>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+        <div class="col-md-3">
+          <div class="card animate__heartBeat" style="width: 18rem; border-radius: 20%;padding: 2%;">
+            <img src="./assets/nginx.jpg" class="card-img-top" style="width: 50%;" alt="nginx">
+            <div class="card-body">
+              <h5 class="card-title">Nginx</h5> 7/10
+              <progress value="6" max="10"> </progress>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+        <div class="col-md-3">
+          <div class="card animate__heartBeat" style="width: 18rem; border-radius: 20%;padding: 2%;">
+            <img src="./assets/html.png" class="card-img-top" style="width: 50%;" alt="Html">
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5> 9/10
+              <progress value="9" max="10"> </progress>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </mat-tab>
+    <mat-tab label="Education">
+      <br>
+      <div class="container">
+        <div class="card ">
+          <div class="card-body">
+            Bachelor of Engineering (B.E), Computer Science & Engineering(CSE) (2015 - 2019)
+            <br>Panimalar Institute of Technology
+            <br>CGPA: 7.5/10
+          </div>
+        </div>
+        <br>
+
+        <div class="card ">
+          <div class="card-body">
+            XII (Senior Secondary), Computer Science, Year of Completion: 2015
+            <br>STATE Board (K.C.Sankaralinga Nadar Hr Sec School)
+            <br>Percentage: 92.00%
+          </div>
+        </div>
+        <br>
+        <div class="card ">
+          <div class="card-body">
+            X (Secondary), Year of Completion: 2013
+            <br>STATE Board (K.C.Sankaralinga Nadar Hr Sec School)
+            <br>Percentage: 92.00%
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+
+
+</div>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" >
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" class="list-header">Profile</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <img  src="./assets/HackerEarth_logo.png" class="sizeSet">&nbsp;
+            <a href="https://www.hackerearth.com/@vishcool" target="blank">https://www.hackerearth.com/@vishcool</a>
+          </li>
+          <li class="list-group-item">
+            <img src="./assets/github.png" class="sizeSet">&nbsp;
+
+            <a href="https://github.com/vishcool" target="blank">https://github.com/vishcool</a>
+          </li>        
+          
+          <li class="list-group-item">
+            <img src="./assets/linkedin.png" class="sizeSet">&nbsp;
+
+            <a href="https://www.linkedin.com/in/sree-vishnu-a5185b160/" target="blank">https://www.linkedin.com/in/sree-vishnu-a5185b160/</a>
+          </li>
+          
+        </ul>
+      </div>
+     
+    </div>
+  </div>
+</div>
